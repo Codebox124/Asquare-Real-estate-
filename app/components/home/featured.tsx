@@ -14,7 +14,7 @@ export default function FeaturedProperies({}) {
             <div className='mt-4 flex justify-center  gap-7 items-center'>
                 <div>
                     <h2 className='font-bold text-3xl mb-3 '>Featured Properties</h2>
-                    <span className='md:text-sm text-xs text-[#999999]'>Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</span>
+                    <span className='md:text-sm text-xs text-[#999999]'>Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click View Details for more information.</span>
                 </div>
 
             </div>

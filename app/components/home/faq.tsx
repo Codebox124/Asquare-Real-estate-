@@ -9,7 +9,7 @@ export default function Faq() {
             <div className='mt-4 flex justify-between   gap-7 items-center'>
                 <div>
                     <h2 className='font-bold text-3xl mb-3 '>Frequently Asked Questions</h2>
-                    <span className='md:text-sm text-xs text-[#999999]'>Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.</span>
+                    <span className='md:text-sm text-xs text-[#999999]'>Find answers to common questions about Estateins services, property listings, and the real estate process. Were here to provide clarity and assist you every step of the way.</span>
                 </div>
 
             </div>
