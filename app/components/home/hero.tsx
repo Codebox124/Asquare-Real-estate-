@@ -9,11 +9,11 @@ import Image from 'next/image'
 export default function Hero() {
     return (
         <div className='mt-10'>
-            <div className='grid md:grid-cols-2 mb-10 '>
+            <div className='md:grid gap-4 flex-col-reverse flex md:grid-cols-2 mb-10 '>
 
                 <div className='flex flex-col justify-center'>
                     <div className='mb-3'>
-                        <h2 className='text-4xl font-bold'>Discover Your Dream Property with Asquare Flourish Homes</h2>
+                        <h2 className=' text-2xl md:text-4xl font-bold'>Discover Your Dream Property with Asquare Flourish Homes</h2>
                     </div>
                     <div className='mb-10'>
                         <span className='text-sm text-[#999999]'>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</span>
@@ -27,7 +27,7 @@ export default function Hero() {
                         </div>
 
                     </div>
-                    <div className='grid grid-cols-3 gap-4 justify-between'>
+                    <div className='grid grid-cols-2 md:grid-cols-3 gap-4 justify-between'>
                         <div className='bg-[#262626] gap-2  p-2 items-center justify-start w-full flex flex-col rounded-md border-gray-500 border'>
                             <span className='text-2xl font-bold'>200+</span>
                             <span className='text-xs'>Happy Customers</span>
@@ -51,15 +51,15 @@ export default function Hero() {
 
                 </div>
                 <div className='relative'>
-                    <div className='absolute left-0 right-0 top-20'>
-                        <Image src={circleImg} alt='' width={150} />
+                    <div className='absolute left-0 right-0 md:top-20 bottom-0'>
+                        <Image src={circleImg} alt=''className='md:w-[150px] w-[100px]' />
                     </div>
                     <Image src={herImg} alt='' className='w-full' />
                 </div>
 
 
             </div>
-            <div className=' grid grid-cols-4 mb-10 gap-5 text-sm text-center'>
+            <div className=' grid grid-cols-2 md:grid-cols-4 mb-10 gap-5 text-sm text-center'>
                 <div className='flex flex-col justify-center gap-3 bg-[#262626] border-gray-500 py-5 rounded-md items-center'>
                     <Image src={icon1} alt='' width={ 70} />
                     <span>Find Your Dream Home</span>

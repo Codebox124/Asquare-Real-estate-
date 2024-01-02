@@ -5,20 +5,18 @@ import starreviw from '@/public/images/Container.png'
 import Image from 'next/image'
 export default function Testimonia() {
     return (
-        <div className='py-20'>
+        <div className='md:py-20 py-10'>
             <Image src={starImg} alt='' className='w-16' />
             <div className='mt-4 flex justify-between   gap-7 items-center'>
                 <div>
                     <h2 className='font-bold text-3xl mb-3 '>What Our Clients Say</h2>
-                    <span className='text-sm text-[#999999]'>Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</span>
+                    <span className='md:text-sm text-xs text-[#999999]'>Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</span>
                 </div>
-                <div className=''>
-                    <button className='py-2 px-5 rounded-md border text-xs'>All</button>
-                </div>
+               
             </div>
-            <div className=' grid grid-cols-3 gap-5 mt-10 '>
+            <div className=' grid md:grid-cols-3 gap-5 mt-10 '>
                 {testiomonia.map((item) => (
-                    <div className='border rounded-md p-4 gap-7 flex flex-col'>
+                    <div key={item.id} className='border rounded-md p-4 gap-7 flex flex-col'>
                         <div>
                             <Image src={starreviw} alt='' width={200} />
                         </div>

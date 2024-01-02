@@ -2,27 +2,25 @@ import React from 'react'
 import starImg from '@/public/images/Abstract Design (1).png'
 
 import Image from 'next/image'
-import Img1 from '@/public/images/Image (1).png'
+
 import { FaBath } from "react-icons/fa";
 import { MdOutlineChair } from "react-icons/md";
-import { PiWarehouseBold } from "react-icons/pi";
+
 import { propData } from '@/app/data/data'
-export default function FeaturedProperies() {
+export default function FeaturedProperies({}) {
     return (
-        <div className='py-20'>
+        <div  className='md:py-20 py-10'>
             <Image src={starImg} alt='' className='w-16' />
             <div className='mt-4 flex justify-center  gap-7 items-center'>
                 <div>
                     <h2 className='font-bold text-3xl mb-3 '>Featured Properties</h2>
-                    <span className='text-sm text-[#999999]'>Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</span>
+                    <span className='md:text-sm text-xs text-[#999999]'>Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</span>
                 </div>
-                <div className=''>
-                    <button className='py-2 px-5 rounded-md border text-xs'>All</button>
-                </div>
+
             </div>
-            <div className=' grid grid-cols-3 gap-5 mt-10'>
+            <div className=' grid md:grid-cols-3 gap-5 mt-10'>
                 {propData.map((item) => (
-                    <div className='border rounded-md p-4 gap-7 flex flex-col'>
+                    <div key={item.id} className='border rounded-md p-4 gap-7 flex flex-col'>
                         <div>
                             <Image src={item.img} alt='' />
                         </div>
